@@ -5,9 +5,9 @@ export default function TaskList({tasks , updateTask, deleteTask}) {
         updateTask(updatedTask, index);
     }
   return (
-    <ul>
+    <ul className="task-list">
       {tasks.map((task, index)=> (
-        <li key={index}>
+        <li key={index} className={task.completed ? "completed" : ""}>
           <div>
             <span>{task.text}
               <small>({task.priority} , {task.category})</small>
@@ -19,7 +19,6 @@ export default function TaskList({tasks , updateTask, deleteTask}) {
               {task.completed ? "Undo" : "Complete"}</button>
             <button onClick={() => deleteTask(index)}>Delete</button>
           </div>
-
         </li>
       ))}
     </ul>
