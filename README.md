@@ -1,5 +1,8 @@
 # React + Vite
 
+Taskform” is a front-end web application built using React + Vite (JavaScript) that allows users to create, track and manage tasks via a form‐based interface. It’s a responsive single-page app with form validation, state management, and dynamic updates.
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
